@@ -1,0 +1,52 @@
+CREATE SCHEMA `plant_collection`;
+
+CREATE TABLE plant_collection.plants (
+	PRIMARY KEY (plant_id),
+	plant_id	INT(5)			NOT NULL,
+	species		VARCHAR(100)	NOT NULL,
+	genus		VARCHAR(100)	NOT NULL,
+	family		VARCHAR(100)	NOT NULL,
+	common_name	VARCHAR(100)	NOT NULL
+);
+
+INSERT INTO plants (plant_id, species, genus, family, common_name)
+	 VALUES (1, 'Monstera deliciosa', 'Monstera', 'Araceae', 'Swiss cheese plant'),
+	 		(2, 'Monstera adansonii', 'Monstera', 'Araceae', 'Swiss cheese vine'),
+	 		(3, 'Epipremnum aureum', 'Epipremnum', 'Araceae', 'Golden pothos'),
+	 		(4, 'Chamaedorea elegans', 'Chamaedorea', 'Arecaceae', 'Parlour palm'),
+	 		(5, 'Platycerium bifurcatum', 'Platycerium', 'Polypodiaceae', 'Staghorn fern'),
+	 		(6, 'Phalaenopsis amabilis', 'Phalaenopsis', 'Orchidaceae', 'Moon orchid'),
+	 		(7, 'Phalaenopsis ''Sogo Vivien''', 'Phalaenopsis', 'Orchidaceae', 'Sogo Vivien'),
+	 		(8, 'Phalaenopsis ''Manhattan''', 'Phalaenopsis', 'Orchidaceae', 'Manhattan'),
+	 		(9, 'Alocasia baginda ''Dragonscale''', 'Alocasia', 'Araceae', 'Dragon Scale Alocasia'),
+	 		(10, 'Philodendron tortum', 'Philodendron', 'Araceae', 'Fernleaf Philodendron'),
+	 		(11, 'Hoya carnosa ''Krimson Queen''', 'Hoya', 'Apocynaceae', 'Wax plant'),
+	 		(12, 'Hoya carnosa ''Krimson Princess''', 'Hoya', 'Apocynaceae', 'Wax plant'),
+	 		(13, 'Hoya pubicalyx ''Royal Hawaiian Purple''', 'Hoya', 'Apocynaceae', 'Wax plant'),
+	 		(14, 'Oxalis triangularis', 'Oxalis', 'Oxalidaceae', 'False shamrock'),
+	 		(15, 'Asparagus aethiopicus ''Sprengeri''', 'Asparagus', 'Asparagaceae', 'Sprengeri fern');
+			(16, 'Ceropegia woodii ''Variegata''', 'Ceropegia', 'Apocynaceae', 'String of hearts'),
+	 		(17, 'Hoya krohniana ''Black''', 'Hoya', 'Apocynaceae', 'Wax plant'),
+	 		(18, 'Curio rowleyanus', 'Curio', 'Asteraceae', 'String of pearls'),
+	 		(19, 'Begonia Bowerae', 'Begonia', 'Begoniaceae', 'Eyelash Begonia'),
+	 		(20, 'Epipremnum aureum ''Neon''', 'Epipremnum', 'Araceae', 'Neon pothos'),
+	 		(21, 'Scindapsus pictus ''Argyraeus''', 'Scindapsus', 'Araceae', 'Silver pothos'),
+	 		(22, 'Philodendron micans', 'Scindapsus', 'Araceae', 'Velvet leaf Philodendron'),
+	 		(23, 'Cissus alata', 'Cissus', 'Vitaceae', 'Grape ivy'),
+	 		(24, 'Haworthia cooperi', 'Haworthia', 'Asphodelaceae', 'Pussy foot'),
+	 		(25, 'Alocasia amazonica ''Polly''', 'Alocasia', 'Araceae', 'African mask'),
+	 		(26, 'Alocasia reginula A.Hay', 'Alocasia', 'Araceae', 'Alocasia Black Velvet'),
+	 		(27, 'Syngonium podophyllum ''Red spot''', 'Syngonium', 'Araceae', 'Arrowhead plant'),
+	 		(28, 'Tradescantia Gibasis Jose Puig', 'Tradescantia', 'Commelinaceae', 'Black Tradescantia'),
+	 		(29, 'Peperomia caperata ''Silver Frost''', 'Peperomia', 'Piperaceae', 'Silver Frost Peperomia'),
+	 		(30, 'Stromanthe sanguinea ''Triostar''', 'Stromanthe', 'Marantaceae', 'Never-Never plant'),
+	 		(31, 'Alocasia cuprea ''Red secret''', 'Alocasia', 'Araceae', 'Red Secret Alocasia'),
+	 		(32, 'Alocasia calidora ''Pink Dragon''', 'Alocasia', 'Araceae', 'Alocasia Pink Dragon'),
+	 		(33, 'Syngonium podophyllum ''Pink Splash''', 'Syngonium', 'Araceae', 'Pink Syngonium'),
+	 		(34, 'Syngonium podophyllum ''White Butterfly''', 'Syngonium', 'Araceae', 'Arrowhead plant'),
+	 		(35, 'Anthurium Andraeanum ''Black Love''', 'Anthurium', 'Araceae', 'Flamingo flower'),
+	 		(36, 'Philodendron erubescens ''Imperial Red''', 'Philodendron', 'Araceae', 'Imperial Red Philodendron'),
+	 		(37, 'Rhipsalis baccifera', 'Rhipsalis', 'Cactaceae', 'Mistletoe cactus'),
+	 		(38, 'Dracaena trifasciata ''Futura Superba''', 'Dracaena', 'Asparagaceae', 'Snake plant'),
+	 		(39, 'Dracaena trifasciata', 'Dracaena', 'Asparagaceae', 'Snake plant'),
+	 		(40, 'Epipremnum pinnatum ''Cebu Blue''', 'Epipremnum', 'Araceae', 'Cebu blue pothos');
